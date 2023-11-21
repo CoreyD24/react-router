@@ -1,0 +1,1 @@
+React router used to switch between 3 pages with different color backgrounds. 
