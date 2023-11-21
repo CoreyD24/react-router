@@ -10,21 +10,28 @@ const App = () => {
   return (
     <>
      <div id="container">
-      <h1>Hello React Router!</h1>
+      <h1 id="title">Hello React Router!</h1>
       <div id="navbar">
-        <Link to={"/blue"}>Blue</Link>
-        <Link to={"/red"}>Red</Link>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/:name"}>Other</Link>
+        <Link to={"/"} id="link">Home</Link>
+        <Link to={"/blue"} id="link">Blue</Link>
+        <Link to={"/red"} id="link">Red</Link>
+        <Link to={"/:other"} id="link">Other</Link>
       </div>
       <div id="main-section">
         <Routes>
+          <Route path="/" element = {<Home/>}/>
           <Route path="/blue" element = {<Blue/>}/>
           <Route path="/red" element = {<Red/>}/>
-          <Route path="/" element = {<Home/>}/>
           <Route path="/:other" element = {<Other/>}/>
         </Routes>
       </div>
+    <footer id="footer">
+      <h4>These aren't what they appear</h4>
+      <Link to={"/blue"}id="link">Home</Link>
+      <Link to={"/red"}id="link">Blue</Link>
+      <Link to={"/:other"}id="link">Red</Link>
+      <Link to={"/"}id="link">Other</Link>
+    </footer>
     </div>
     </>
   )

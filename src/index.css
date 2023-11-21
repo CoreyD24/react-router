@@ -10,6 +10,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: lightgrey;
   }
   #container > div {
     display: flex;
@@ -18,6 +19,7 @@
     padding: 2em;
     justify-content: space-evenly;
   }
+
   #main-section {
     flex-grow: 1;
   }
@@ -26,6 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px double black;
   }
   .red {
     background-color:red;
@@ -37,9 +40,21 @@
   }
   .home {
     background-color: rebeccapurple;
-    color: white;
+    color: rgb(255, 255, 255);
+
   }
   .other{
     background-color: olive;
     color: black
+  }
+  #link:hover{
+    font-size: x-large;
+  }
+  #footer{
+    justify-content: space-evenly;
+    display: flex;
+  }
+  #title{
+    text-decoration:underline;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
   }
